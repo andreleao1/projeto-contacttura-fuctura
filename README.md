@@ -6,7 +6,7 @@
 
 ## Status
 
-### ![Construindo](assets\img\loading.png) Em construção... ![Construindo](assets\img\loading.png)
+### ![Construindo](C:\java\contacttura\assets\img\assets\img\loading) Em construção... ![Construindo](C:\java\contacttura\assets\img\assets\img\loading)
 
 ## Features
 
