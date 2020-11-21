@@ -6,7 +6,7 @@
 
 ## Status
 
-###Em construção...
+### Em construção...
 
 ## Features
 
@@ -21,4 +21,4 @@
 ### Java
 ### Spring Framework
 ### Lombok
-### MySql
+### MySqls
