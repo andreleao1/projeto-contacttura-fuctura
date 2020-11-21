@@ -6,7 +6,7 @@
 
 ## Status
 
-### ![Construindo](\assets\img\loading) Em construção... ![Construindo](\assets\img\loading)
+### ![Construindo](..\assets\img\loading) Em construção... ![Construindo](..\assets\img\loading)
 
 ## Features
 
