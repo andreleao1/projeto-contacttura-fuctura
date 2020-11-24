@@ -1,5 +1,6 @@
 package com.contacttura.contacttura.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,6 +19,7 @@ public class Contact {
 	@EqualsAndHashCode.Include
 	private Long id;
 
+	@Column(name = "contact_name")
 	private String name;
 
 	private String email;
