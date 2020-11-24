@@ -13,7 +13,7 @@
 - [x] Criar novo contato
 - [x] Listar todos os contatos
 - [x] Buscar por Id
-- [] Atualizar dados de um contato
+- [x] Atualizar dados de um contato
 - [x] Remover um contato pelo Id
 
 ## Tecnologias
