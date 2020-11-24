@@ -10,8 +10,8 @@
 
 ## Features
 
-- [] Criar novo contato
-- [] Listar todos os contatos
+- [x] Criar novo contato
+- [x] Listar todos os contatos
 - [] Buscar por Id
 - [] Atualizar dados de um contato
 - [] Remover um contato pelo Id
