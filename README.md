@@ -22,3 +22,8 @@
 ### Spring Framework
 ### Lombok
 ### MySqls
+### Swagger
+
+## Como testar
+
+### [acessar o swagger] (http://localhost:8090/swagger-ui/index.html)

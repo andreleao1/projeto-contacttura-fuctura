@@ -21,6 +21,8 @@ import com.contacttura.contacttura.model.Contact;
 import com.contacttura.contacttura.repository.ContactRepository;
 import com.contacttura.contacttura.service.ContactService;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("/contacts")
 public class ContactController {
@@ -31,18 +33,21 @@ public class ContactController {
 	@Autowired
 	private ContactService contactService;
 
+	@ApiOperation("Deve retornar uma lista de contatos.")
 	@GetMapping
 	@ResponseStatus(HttpStatus.OK)
 	public List<Contact> list() {
 		return contactRepository.findAll();
 	}
 
+	@ApiOperation("Deve permitir salvar um contato.")
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Contact save(@RequestBody Contact contact) {
 		return contactService.save(contact);
 	}
 
+	@ApiOperation("Deve retornar um contato a partir de um id passado pelo consumidor da API.")
 	@GetMapping("/{id}")
 	public ResponseEntity<Contact> find(@PathVariable Long id) {
 
@@ -55,6 +60,7 @@ public class ContactController {
 		return ResponseEntity.ok(contact.get());
 	}
 
+	@ApiOperation("Deve atualizar um contato a partir de um id passado pelo consumidor da API.")
 	@PutMapping("/{id}")
 	public ResponseEntity<Contact> update(@PathVariable Long id, @RequestBody Contact contact) {
 		Optional<Contact> contactFound = contactRepository.findById(id);
@@ -69,6 +75,7 @@ public class ContactController {
 		return ResponseEntity.ok(savedContact);
 	}
 
+	@ApiOperation("Deve excluir um contato a partir de um id passado pelo consumidor da API.")
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Contact> delete(@PathVariable Long id) {
 		Optional<Contact> contact = contactRepository.findById(id);
