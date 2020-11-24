@@ -14,7 +14,7 @@
 - [x] Listar todos os contatos
 - [x] Buscar por Id
 - [] Atualizar dados de um contato
-- [] Remover um contato pelo Id
+- [x] Remover um contato pelo Id
 
 ## Tecnologias
 
